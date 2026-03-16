@@ -10,7 +10,7 @@ capturedAt: '2026-03-16T00:00:00Z'
 canonicalArtifact: brief
 derivedFrom: []
 tracesTo:
-  - CNST-002
+  - CNST-008
 blockedBy: []
 supersedes: []
 ---

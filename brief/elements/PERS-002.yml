@@ -1,7 +1,7 @@
 id: PERS-002
 type: persona
 title: Client
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

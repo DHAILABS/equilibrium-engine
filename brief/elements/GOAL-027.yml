@@ -1,7 +1,7 @@
 id: GOAL-027
 type: goal
 title: Import repository inventory
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

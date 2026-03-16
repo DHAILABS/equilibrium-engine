@@ -1,7 +1,7 @@
 id: CNST-001
 type: constraint
 title: Git repo as persistence layer
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

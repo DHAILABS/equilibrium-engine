@@ -1,7 +1,7 @@
 id: ASMP-001
 type: assumption
 title: LiteLLM inference available
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

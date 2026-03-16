@@ -1,7 +1,7 @@
 id: GOAL-016
 type: goal
 title: Route elements to correct spec sub-artifacts
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

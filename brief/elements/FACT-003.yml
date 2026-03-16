@@ -1,7 +1,7 @@
 id: FACT-003
 type: fact
 title: Element extraction pipeline operational
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

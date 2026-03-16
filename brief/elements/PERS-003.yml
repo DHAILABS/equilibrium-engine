@@ -1,7 +1,7 @@
 id: PERS-003
 type: persona
 title: Agent (Claude Code)
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

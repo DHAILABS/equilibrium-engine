@@ -1,7 +1,7 @@
 id: FACT-002
 type: fact
 title: Web UI already built with Next.js
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

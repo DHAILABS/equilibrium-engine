@@ -1,7 +1,7 @@
 id: GOAL-008
 type: goal
 title: Review and approve elements
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

@@ -1,7 +1,7 @@
 id: CNST-002
 type: constraint
 title: Element-centric storage (one file per element)
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

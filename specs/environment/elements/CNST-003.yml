@@ -1,7 +1,7 @@
 id: CNST-003
 type: constraint
 title: Agent proposal isolation (drafts/ workspace)
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

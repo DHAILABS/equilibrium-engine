@@ -1,7 +1,7 @@
 id: ASMP-003
 type: assumption
 title: GitHub integration available
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

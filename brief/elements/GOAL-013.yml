@@ -1,7 +1,7 @@
 id: GOAL-013
 type: goal
 title: Assess brief readiness for spec derivation
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

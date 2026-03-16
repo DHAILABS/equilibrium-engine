@@ -1,7 +1,7 @@
 id: GOAL-010
 type: goal
 title: Group elements by epic
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

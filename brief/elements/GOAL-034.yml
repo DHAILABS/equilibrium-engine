@@ -1,7 +1,7 @@
 id: GOAL-034
 type: goal
 title: Serve project context via MCP
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

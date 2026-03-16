@@ -1,7 +1,7 @@
 id: ASMP-002
 type: assumption
 title: Single consultant initially
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

@@ -1,7 +1,7 @@
 id: GOAL-015
 type: goal
 title: Derive spec from approved brief
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

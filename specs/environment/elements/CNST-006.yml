@@ -1,7 +1,7 @@
 id: CNST-006
 type: constraint
 title: No runtime observation in MVP
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

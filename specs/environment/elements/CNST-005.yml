@@ -1,7 +1,7 @@
 id: CNST-005
 type: constraint
 title: No web UI for architecture canvas in MVP
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

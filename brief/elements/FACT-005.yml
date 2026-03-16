@@ -1,7 +1,7 @@
 id: FACT-005
 type: fact
 title: Multi-project support operational
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

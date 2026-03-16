@@ -1,7 +1,7 @@
 id: GOAL-002
 type: goal
 title: View project dashboard
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

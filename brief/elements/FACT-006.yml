@@ -1,7 +1,7 @@
 id: FACT-006
 type: fact
 title: Bootstrap project has system-level brief, not user stories
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

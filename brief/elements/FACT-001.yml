@@ -1,7 +1,7 @@
 id: FACT-001
 type: fact
 title: Project Description
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

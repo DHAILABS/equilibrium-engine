@@ -1,7 +1,7 @@
 id: CNST-004
 type: constraint
 title: Python + TypeScript technical stack
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

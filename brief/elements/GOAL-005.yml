@@ -1,7 +1,7 @@
 id: GOAL-005
 type: goal
 title: Upload documents for element extraction
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

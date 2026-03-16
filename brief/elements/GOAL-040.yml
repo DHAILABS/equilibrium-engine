@@ -1,0 +1,19 @@
+id: GOAL-040
+type: goal
+title: Compute effort estimates from gap data
+status: draft
+confidence: medium
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Estimation
+---
+As a consultant, I want the system to compute effort/cost ranges from open gap data — where missing items with 'implement' resolution have known cost ranges, ambiguous items widen the estimate band, and conflicting items are zero until resolved — so that estimates are grounded in the actual state of the project rather than guesswork.
+
+The consultant applies delivery risk adjustments (stakeholder responsiveness, political friction, domain familiarity) on top of the technical estimate.

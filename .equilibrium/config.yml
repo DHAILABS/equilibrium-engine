@@ -1,0 +1,5 @@
+project: equilibrium-engine
+version: 0.1.0
+phase: brief
+created: "2026-03-16"
+description: "Equilibrium Engine is a spec-driven development framework that tracks four canonical states and the typed gaps between them, helping consultants transform messy client input into structured specifications and drive projects toward alignment."

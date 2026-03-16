@@ -1,0 +1,19 @@
+id: GOAL-032
+type: goal
+title: Promote verified output to canonical
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Agent Orchestration
+---
+As a consultant, I want to review verified worker output and promote it from drafts/ to canonical paths, triggering gap re-evaluation that may surface new or residual gaps, so that each promotion closes known gaps while detecting any new mismatches introduced.
+
+Blocker-severity items and changes to signed-off artifacts always require explicit consultant approval.

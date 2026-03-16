@@ -1,0 +1,16 @@
+id: QUES-006
+type: open_question
+title: Interop export priority?
+status: draft
+confidence: medium
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Which ecosystem formats matter first — CLAUDE.md (Claude Code), .cursorrules (Cursor), AGENTS.md (GitHub), or something else? Priority should be driven by which tools the consultant actually uses. CLAUDE.md is currently the most immediately useful.

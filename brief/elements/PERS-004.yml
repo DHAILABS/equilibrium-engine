@@ -1,0 +1,16 @@
+id: PERS-004
+type: persona
+title: System
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The Equilibrium platform itself, acting autonomously. Derives views from element collections, computes dashboard metrics, observes repository inventory, triggers gap re-evaluation cascades, and serves context through MCP. Does not make judgment calls — surfaces information for the consultant to act on.

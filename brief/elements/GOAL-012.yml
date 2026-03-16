@@ -1,0 +1,17 @@
+id: GOAL-012
+type: goal
+title: Run critique on brief elements
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Quality
+---
+As a consultant, I want the system to automatically critique the brief by detecting conflicts between elements, identifying gaps in coverage, flagging weak user stories (missing persona/trigger/outcome), and highlighting unexamined assertions with design implications, so that I can improve brief quality before spec derivation.

@@ -1,0 +1,16 @@
+id: CNST-001
+type: constraint
+title: Git repo as persistence layer
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: spec
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The system uses a git repository as the sole persistence layer. No database. YAML files are the records. Git history provides audit trail and versioning. This constrains the storage model but enables offline operation, standard tooling, and natural collaboration patterns.

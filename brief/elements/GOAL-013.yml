@@ -1,0 +1,19 @@
+id: GOAL-013
+type: goal
+title: Assess brief readiness for spec derivation
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Quality
+---
+As a consultant, I want a readiness assessment that evaluates the brief across dimensions (goal clarity, actor clarity, constraint clarity, conflict resolution, vocabulary quality, acceptance clarity, confidence coverage) so that I know whether the brief is mature enough for formal spec derivation.
+
+Output should be a qualitative judgment: not ready / partially ready / ready for spec derivation / ready for client review.

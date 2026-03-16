@@ -1,0 +1,17 @@
+id: GOAL-007
+type: goal
+title: Create elements manually
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Capture
+---
+As a consultant, I want to manually create individual brief elements (goals, personas, facts, constraints, etc.) with a type, title, body, confidence, and optional epic grouping, so that I can add information that doesn't come from documents or interviews.

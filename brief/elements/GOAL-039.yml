@@ -1,0 +1,17 @@
+id: GOAL-039
+type: goal
+title: Import regulatory blocks
+status: draft
+confidence: medium
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Block Library
+---
+As a consultant, I want to import regulatory requirements (GDPR articles, local data protection laws) as structured blocks that can be linked to capability blocks and trigger compliance gap detection, so that regulatory obligations are systematically tracked rather than informally noted.

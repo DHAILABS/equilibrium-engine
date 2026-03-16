@@ -1,0 +1,17 @@
+id: GOAL-027
+type: goal
+title: Import repository inventory
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Architecture & Inventory
+---
+As a consultant, I want the system to observe the actual repository — structure, package manifests, lockfiles, config files — and represent it as inventory elements so that I have a machine-readable picture of what actually exists for gap detection against intended architecture.

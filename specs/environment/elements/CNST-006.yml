@@ -1,0 +1,16 @@
+id: CNST-006
+type: constraint
+title: No runtime observation in MVP
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: spec
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Actual Inventory for MVP is limited to repository structure, package manifests, lockfiles, and config files in the repository. Runtime observation (deployed infrastructure, environment state, telemetry) is explicitly deferred due to auth/access, environment drift, and secrets handling complexity.

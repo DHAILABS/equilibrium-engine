@@ -1,0 +1,16 @@
+id: CNST-002
+type: constraint
+title: Element-centric storage (one file per element)
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: spec
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Every piece of project information is stored as one YAML file per element. Documents are rendered views over element collections, not sources of truth. This enables per-element provenance, merge-friendly concurrent work, and field-level mutation history.

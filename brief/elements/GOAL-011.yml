@@ -1,0 +1,19 @@
+id: GOAL-011
+type: goal
+title: Preserve element provenance
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Capture
+---
+As a consultant, I want every element to track its source (which document, which interview turn, which manual entry), who said it, when it was captured, and its confidence level so that I can always trace back to the origin of any requirement.
+
+Transcript-extracted elements should default to lower confidence than formally stated ones.

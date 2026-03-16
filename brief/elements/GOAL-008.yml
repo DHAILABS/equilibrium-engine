@@ -1,0 +1,19 @@
+id: GOAL-008
+type: goal
+title: Review and approve elements
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Capture
+---
+As a consultant, I want to review extracted elements and approve, reject, or edit them individually or in bulk so that only validated information progresses to spec derivation.
+
+Elements start as 'draft' and move to 'agreed' on approval or 'rejected' on dismissal.

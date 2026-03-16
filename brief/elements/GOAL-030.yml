@@ -1,0 +1,19 @@
+id: GOAL-030
+type: goal
+title: Assign tickets to worker agents
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Agent Orchestration
+---
+As a consultant, I want to assign tickets to Claude Code worker agents that receive the ticket plus MCP-assembled context and produce output to drafts/ with evidence artifacts and completion reports, so that implementation work is automated while maintaining proposal isolation.
+
+Workers must never write directly to canonical paths.

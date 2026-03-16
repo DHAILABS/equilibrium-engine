@@ -1,0 +1,16 @@
+id: ASMP-004
+type: assumption
+title: Docker deployment model
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The web application runs in Docker on a dedicated server (Netcup RS 8000 G12, 64GB RAM). Projects are stored in a Docker volume mounted at /data/projects/. Traefik handles TLS and routing.

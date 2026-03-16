@@ -1,0 +1,17 @@
+id: GOAL-026
+type: goal
+title: Record architecture decisions
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Architecture & Inventory
+---
+As a consultant, I want to record architecture decisions with context, options considered, chosen option, and rationale, linked to affected spec elements, so that design choices are traceable and the reasoning is preserved for future reference.

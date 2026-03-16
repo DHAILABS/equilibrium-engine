@@ -1,0 +1,16 @@
+id: FACT-003
+type: fact
+title: Element extraction pipeline operational
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Document upload and guided interview both feed into an LLM-based extraction pipeline (via LiteLLM) that produces typed brief elements with provenance. Elements are saved as YAML files following the canonical schema. Extraction handles goals, personas, constraints, facts, assumptions, terms, and open questions.

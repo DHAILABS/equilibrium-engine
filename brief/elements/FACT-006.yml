@@ -1,0 +1,16 @@
+id: FACT-006
+type: fact
+title: Bootstrap project has system-level brief, not user stories
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The original built-in Equilibrium project has 90 brief elements extracted directly from the roadmap document. These are system-description-level statements ('Typed objects as primary data model') rather than proper user stories ('As a consultant, I want...'). They lack epic grouping, persona references, and the user-story abstraction level needed for meaningful spec derivation.

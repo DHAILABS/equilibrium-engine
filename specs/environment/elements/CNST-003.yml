@@ -1,0 +1,16 @@
+id: CNST-003
+type: constraint
+title: Agent proposal isolation (drafts/ workspace)
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: spec
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Agents never write directly to canonical artifact paths. All agent output goes to a drafts/ workspace. The consultant reviews and promotes to canonical. This ensures human oversight of all canonical state changes.

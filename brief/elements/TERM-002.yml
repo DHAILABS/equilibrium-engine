@@ -1,0 +1,16 @@
+id: TERM-002
+type: term
+title: Element
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+A typed object with identity, provenance, and lineage. The atomic unit of information in Equilibrium. Stored one per YAML file. IDs identify concrete instances, not logical concepts — when revised, a new element with a new ID supersedes the old one.

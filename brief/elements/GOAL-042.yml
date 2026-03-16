@@ -1,0 +1,17 @@
+id: GOAL-042
+type: goal
+title: Validate elements against schema
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Element Model
+---
+As a consultant, I want all element YAML files to be validated against the canonical schema — catching missing required fields, invalid enum values, and broken references — so that data quality is enforced systematically rather than discovered downstream.

@@ -1,0 +1,16 @@
+id: TERM-007
+type: term
+title: Mismatch Class
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+What a gap discrepancy actually is: missing (no downstream counterpart), conflicting (incompatible claims), ambiguous (unclear intent), unjustified (no upstream justification), divergent (drifted from upstream), regulatory_noncompliance (obligation unmet).

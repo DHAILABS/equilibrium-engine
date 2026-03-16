@@ -1,0 +1,16 @@
+id: FACT-002
+type: fact
+title: Web UI already built with Next.js
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+A Next.js web application exists providing: project dashboard, project creation/deletion, document upload for element extraction, guided intake interview, manual element creation, element review (approve/reject/edit), bulk status updates, spine visualization, and basic spec derivation triggering. Runs in Docker with Traefik reverse proxy.

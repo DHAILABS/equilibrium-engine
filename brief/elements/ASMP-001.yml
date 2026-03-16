@@ -1,0 +1,16 @@
+id: ASMP-001
+type: assumption
+title: LiteLLM inference available
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The system assumes a LiteLLM proxy is available for LLM inference (extraction, critique, derivation, agent work). Currently configured to use Claude Sonnet 4 via LiteLLM. No local/on-device inference — all LLM calls go through the API proxy.

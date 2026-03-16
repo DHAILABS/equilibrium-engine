@@ -1,0 +1,16 @@
+id: TERM-006
+type: term
+title: Snapshot
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+An immutable manifest of a signed-off state. Records which element IDs were included, their content hashes at signing time, dismissed critiques, parked items, signer identity, and timestamp. What makes sign-off enforceable rather than conceptual.

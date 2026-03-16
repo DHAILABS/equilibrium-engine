@@ -1,0 +1,17 @@
+id: GOAL-018
+type: goal
+title: Maintain stable traceability through derivation
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Spec Derivation
+---
+As a consultant, I want derived spec elements to have stable IDs and trace links back to their source brief elements so that when a brief element changes, I can see exactly which spec elements are affected and may need re-derivation.

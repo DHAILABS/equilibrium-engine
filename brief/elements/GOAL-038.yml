@@ -1,0 +1,17 @@
+id: GOAL-038
+type: goal
+title: Validate block composition
+status: draft
+confidence: medium
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Block Library
+---
+As a consultant, I want the system to validate block compositions — surfacing unsatisfied requirements, incompatibilities, and complexity adjustments — when blocks are placed into a project's architecture, so that I catch integration issues before implementation.

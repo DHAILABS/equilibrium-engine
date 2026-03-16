@@ -1,0 +1,17 @@
+id: GOAL-020
+type: goal
+title: "Detect Brief-to-Spec mismatches (Gap\u2081)"
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Gap Detection
+---
+As a consultant, I want the system to compare brief elements against derived spec elements and surface typed mismatches — missing spec coverage, conflicting claims, ambiguous intent — so that I can see exactly where the spec doesn't yet satisfy the brief.

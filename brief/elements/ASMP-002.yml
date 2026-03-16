@@ -1,0 +1,16 @@
+id: ASMP-002
+type: assumption
+title: Single consultant initially
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The system is designed for a single consultant (Zac) initially. Multi-consultant collaboration, role-based access control, and concurrent editing are deferred. The consultant has full access to all artifacts and operations.

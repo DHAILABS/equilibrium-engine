@@ -1,0 +1,19 @@
+id: GOAL-014
+type: goal
+title: Sign off on brief snapshot
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Quality
+---
+As a consultant, I want to freeze a versioned snapshot of the brief that records exactly which elements were included, their content hashes, dismissed critiques with reasons, parked items, and timestamp, so that sign-off is enforceable and scope changes require an explicit amendment cycle.
+
+Snapshots must be immutable once signed.

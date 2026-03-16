@@ -1,0 +1,16 @@
+id: PERS-002
+type: persona
+title: Client
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+A stakeholder who commissions work through the consultant. Participates in brief capture sessions, reviews and challenges brief elements, reviews derived specifications, approves snapshots, and tracks project progress. Not technical — interacts through business language. Needs transparency into what was agreed, what changed, and why estimates shifted. May be a CTO, product owner, or business sponsor.

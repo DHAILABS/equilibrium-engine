@@ -1,0 +1,17 @@
+id: GOAL-043
+type: goal
+title: Supersede elements without losing history
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Element Model
+---
+As a consultant, I want to revise an element by creating a new element with a new ID that supersedes the old one, rather than mutating in place, so that traceability is always to a concrete instance and I can see exactly which version of a goal a downstream spec element was derived from.

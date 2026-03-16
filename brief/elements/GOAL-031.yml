@@ -1,0 +1,19 @@
+id: GOAL-031
+type: goal
+title: Verify ticket completion with evidence
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Agent Orchestration
+---
+As a consultant, I want a verification loop that checks worker output against acceptance criteria using both automated hooks (test suites, linters, schema validation) and agent-based judgment (spec satisfaction, architectural soundness), so that gap closure is evidence-based rather than self-reported.
+
+Hook checks run first (fail-fast); agent checks run only if hooks pass.

@@ -1,0 +1,16 @@
+id: QUES-005
+type: open_question
+title: Scoped inclusion trigger authoring?
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+How are conditional and auto-triggered context inclusion rules defined? Per-entry metadata in the context file, a separate routing config, or inferred from element tags? This affects how easy it is for the consultant to manage context delivery.

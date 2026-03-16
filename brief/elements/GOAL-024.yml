@@ -1,0 +1,17 @@
+id: GOAL-024
+type: goal
+title: Track gap resolution lifecycle
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Gap Detection
+---
+As a consultant, I want each gap item to have a resolution mode (implement, decide, investigate, accept, escalate, document) and lifecycle status (open, in_progress, closed, accepted) with evidence requirements for closure, so that gap resolution is defensible rather than arbitrary.

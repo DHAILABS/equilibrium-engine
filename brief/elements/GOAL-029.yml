@@ -1,0 +1,17 @@
+id: GOAL-029
+type: goal
+title: Create tickets from gap items
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Agent Orchestration
+---
+As a consultant, I want to create structured work tickets from open gap items, carrying spec refs, architecture context, constraints, acceptance criteria, and evidence requirements, so that agents receive clear, bounded tasks rather than vague instructions.

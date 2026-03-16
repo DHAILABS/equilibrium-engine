@@ -1,0 +1,17 @@
+id: GOAL-010
+type: goal
+title: Group elements by epic
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Capture
+---
+As a consultant, I want to assign elements to named epics (e.g. 'User Onboarding', 'Reporting') and view them grouped by epic so that related stories are visually clustered and I can assess completeness per feature area.

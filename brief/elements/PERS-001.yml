@@ -1,0 +1,16 @@
+id: PERS-001
+type: persona
+title: Consultant (Zac)
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The primary user of Equilibrium. An independent technology consultant who runs client engagements, captures requirements through discovery sessions, derives specifications, makes architecture decisions, manages the gap registry, and oversees agent-driven implementation work. Operates solo or with a small team. Needs the system to be a force multiplier — handling the structured bookkeeping so the consultant can focus on judgment, client relationships, and design decisions.

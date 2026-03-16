@@ -1,0 +1,17 @@
+id: GOAL-009
+type: goal
+title: Edit existing elements
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Capture
+---
+As a consultant, I want to edit an element's title, body, confidence, and epic assignment after creation so that I can refine elements as understanding develops without creating duplicates.

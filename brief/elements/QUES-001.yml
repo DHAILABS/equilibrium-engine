@@ -1,0 +1,16 @@
+id: QUES-001
+type: open_question
+title: 'MCP transport: stdio vs HTTP vs dual?'
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The MCP server needs to serve both Claude Code sessions (local, stdio transport) and the web UI (HTTP). Should there be a unified server with dual transport, or separate servers optimized for each use case?

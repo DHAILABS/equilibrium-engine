@@ -1,0 +1,19 @@
+id: GOAL-005
+type: goal
+title: Upload documents for element extraction
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Capture
+---
+As a consultant, I want to upload client documents (transcripts, meeting notes, RFPs, emails) so that the system extracts typed brief elements with provenance automatically.
+
+The system should handle messy, unstructured input and produce well-typed elements (goals, personas, constraints, facts, assumptions, questions, terms) at the right abstraction level.

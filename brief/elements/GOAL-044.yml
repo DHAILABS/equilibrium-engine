@@ -1,0 +1,17 @@
+id: GOAL-044
+type: goal
+title: Detect restatements and contradictions
+status: draft
+confidence: medium
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Element Model
+---
+As a consultant, I want the system to detect when new input restates or contradicts existing elements — flagging potential merges for review (conservative: when in doubt, keep separate) and marking contradictions as contested — so that the element base stays clean as input accumulates from multiple sources.

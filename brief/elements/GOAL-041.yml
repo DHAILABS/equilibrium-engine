@@ -1,0 +1,17 @@
+id: GOAL-041
+type: goal
+title: Track estimate convergence as gaps close
+status: draft
+confidence: medium
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Estimation
+---
+As a consultant, I want to see how estimates tighten as gaps are closed, with a clear view of what the client can do to narrow the remaining uncertainty, so that clients understand the relationship between decisions and cost clarity.

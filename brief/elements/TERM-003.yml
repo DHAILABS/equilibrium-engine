@@ -1,0 +1,16 @@
+id: TERM-003
+type: term
+title: Gap
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+A typed mismatch between adjacent canonical states. A registry of discrepancies, not a workflow engine. Each gap has a mismatch class (what the discrepancy is) and a resolution mode (how it might be closed). Gap is NOT a task list, risk register, estimation engine, or decision tracker.

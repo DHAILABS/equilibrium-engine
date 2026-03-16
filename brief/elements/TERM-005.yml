@@ -1,0 +1,16 @@
+id: TERM-005
+type: term
+title: Proposal Isolation
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The agent write discipline: all agent output goes to drafts/, never to canonical paths. The consultant reviews and promotes to canonical. This ensures human oversight without requiring heavy branch/PR ceremony.

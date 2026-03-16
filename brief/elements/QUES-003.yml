@@ -1,0 +1,16 @@
+id: QUES-003
+type: open_question
+title: Worker agent specialisation?
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Should there be one general worker agent type, or specialists (code writer, test writer, documentation writer)? Specialists may produce better output but add orchestration complexity. Start with one general worker for MVP?

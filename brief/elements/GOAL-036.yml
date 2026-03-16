@@ -1,0 +1,19 @@
+id: GOAL-036
+type: goal
+title: Export context to ecosystem formats
+status: draft
+confidence: medium
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Context & MCP
+---
+As a consultant, I want to generate CLAUDE.md, AGENTS.md, .cursorrules and similar ecosystem formats as rendered views from the Equilibrium context layer so that I'm not locked into any single AI coding tool.
+
+Equilibrium is the source of truth; ecosystem formats are exports.

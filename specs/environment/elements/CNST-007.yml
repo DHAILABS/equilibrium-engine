@@ -1,0 +1,16 @@
+id: CNST-007
+type: constraint
+title: Immutable signed snapshots
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: spec
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Sign-off snapshots (Brief, Spec) are immutable once created. Changes to signed artifacts require a new amendment cycle with explicit review. Architecture-first changes must never silently mutate upstream signed artifacts.

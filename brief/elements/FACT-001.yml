@@ -1,0 +1,16 @@
+id: FACT-001
+type: fact
+title: Project Description
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Equilibrium Engine is a spec-driven development framework that tracks four canonical states — Brief, Spec, Intended Architecture, and Actual Inventory — and the typed gaps between them. It helps technology consultants progressively transform messy client input into structured specifications, detect mismatches at every level, and drive projects toward alignment through evidence-based gap closure. The system is designed for solo consultants running client engagements.

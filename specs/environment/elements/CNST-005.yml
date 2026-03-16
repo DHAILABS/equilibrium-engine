@@ -1,0 +1,16 @@
+id: CNST-005
+type: constraint
+title: No web UI for architecture canvas in MVP
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: spec
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The capability canvas (drag-and-drop block composition) is explicitly post-MVP. MVP views are generated markdown files and a basic web dashboard. The semantic engine must work before any sophisticated UI is built.

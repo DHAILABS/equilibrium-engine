@@ -1,0 +1,16 @@
+id: CNST-004
+type: constraint
+title: Python + TypeScript technical stack
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: spec
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+Python for scripts, validation, and tooling. TypeScript for MCP server and web UI. PyYAML or ruamel.yaml for YAML handling. pytest for Python tests, vitest for TypeScript tests.

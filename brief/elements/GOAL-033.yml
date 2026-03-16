@@ -1,0 +1,19 @@
+id: GOAL-033
+type: goal
+title: Track convergence toward equilibrium
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Agent Orchestration
+---
+As a consultant, I want to see convergence metrics — total open gaps over time, closure velocity vs creation rate, stale gap detection — so that I can tell whether the project is progressing toward equilibrium or thrashing.
+
+Equilibrium is achieved when all gaps for a given scope are closed or consciously accepted.

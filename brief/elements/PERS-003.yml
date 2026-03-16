@@ -1,0 +1,16 @@
+id: PERS-003
+type: persona
+title: Agent (Claude Code)
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+An AI agent operating as a Claude Code sub-process. Receives structured tickets with context, produces work output to drafts/, generates evidence artifacts, and reports completion. Never writes directly to canonical paths. Stateless — all context comes from the ticket and MCP queries. May be a PM coordinator agent, a worker agent, or a verification agent.

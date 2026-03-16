@@ -1,0 +1,16 @@
+id: TERM-004
+type: term
+title: Equilibrium
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The state where all adjacent pairs on the spine are aligned — all gaps for a given scope are closed or consciously accepted. The system's goal is to drive toward equilibrium through evidence-based gap closure.

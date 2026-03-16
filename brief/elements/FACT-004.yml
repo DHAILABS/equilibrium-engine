@@ -1,0 +1,16 @@
+id: FACT-004
+type: fact
+title: Spec derivation engine implemented
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+A spec derivation pipeline exists that transforms approved brief elements into spec elements routed to the correct sub-artifact (Functional, NFR, Data, Integration, Environment, Verification). Derived elements maintain trace links to source brief elements. Derivation uses ISS quality templates for structured output.

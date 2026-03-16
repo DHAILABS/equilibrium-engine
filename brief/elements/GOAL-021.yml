@@ -1,0 +1,17 @@
+id: GOAL-021
+type: goal
+title: "Detect Spec-to-Architecture mismatches (Gap\u2082)"
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Gap Detection
+---
+As a consultant, I want the system to compare spec elements against architecture decisions and surface mismatches — spec items with no architectural home, design gaps, unjustified architecture choices — so that I can ensure the design addresses the specification.

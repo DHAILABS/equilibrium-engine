@@ -1,0 +1,19 @@
+id: GOAL-028
+type: goal
+title: Support architecture-first entry
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Architecture & Inventory
+---
+As a consultant, I want to start work from architecture changes (refactoring, tech debt, capability upgrades) that create downstream-ahead gap items propagating upstream toward Spec and Brief, so that not all work has to originate from Brief — but upstream artifacts are never silently mutated.
+
+Architecture-first changes must generate upstream gap items or change proposals, not direct modifications.

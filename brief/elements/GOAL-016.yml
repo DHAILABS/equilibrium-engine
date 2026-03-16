@@ -1,0 +1,17 @@
+id: GOAL-016
+type: goal
+title: Route elements to correct spec sub-artifacts
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Spec Derivation
+---
+As a consultant, I want the derivation engine to automatically route derived elements to the correct spec sub-artifact based on their content — behavior to Functional Spec, quality attributes to NFR, information structures to Data Spec, external boundaries to Integration Spec, environmental constraints to Environment Spec — so that each fact type has one authoritative home.

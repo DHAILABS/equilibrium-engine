@@ -1,0 +1,16 @@
+id: TERM-001
+type: term
+title: Spine
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: docs/roadmap.md
+speakerOrAuthor: Zac
+capturedAt: '2026-03-16T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+The four canonical states tracked by the system — Brief, Spec, Intended Architecture, Actual Inventory — and the typed gaps between adjacent pairs. The spine is the core structural model of Equilibrium.

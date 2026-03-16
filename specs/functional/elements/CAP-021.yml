@@ -1,0 +1,58 @@
+id: CAP-021
+type: capability
+title: Element Schema Validation
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-042
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+System validates elements during creation, editing, or batch validation operations.
+
+## Action
+
+The system shall:
+1. Validate all element YAML files against canonical schema definitions
+2. Check for missing required fields (ID, type, title, body, status)
+3. Validate enum values against allowed lists (element types, status values)
+4. Verify reference integrity for cross-element links (epic assignments, trace links)
+5. Enforce field format requirements (ID patterns, date formats)
+6. Validate element-type-specific constraints and business rules
+7. Generate detailed validation error reports with specific field issues
+8. Prevent persistence of invalid elements while allowing draft saves with warnings
+
+## Outcome
+
+Data quality assurance with:
+- Schema-compliant element storage preventing corrupt data
+- Detailed validation error reporting for correction guidance
+- Reference integrity enforcement across element relationships
+- Consistent data format enabling reliable processing
+- Validation audit trail for quality monitoring
+
+## Scope
+
+Applies to all element types across all projects and canonical states. Includes creation-time and modification-time validation. Excludes external schema validation or non-Equilibrium data formats.
+
+## Edge Cases
+
+1. **Schema evolution**: System shall handle schema version migrations and provide backward compatibility validation
+2. **Partial validation failures**: System shall validate all fields and report comprehensive error sets rather than stopping at first error
+
+## Failure Behaviour
+
+When schema validation fails:
+- Block element persistence for critical validation failures
+- Allow draft saves with validation warnings for non-critical issues
+- Provide specific error messages with correction guidance
+- Log validation patterns for schema refinement
+- Offer schema repair suggestions for common validation failures

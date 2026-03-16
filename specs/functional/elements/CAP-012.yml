@@ -1,0 +1,57 @@
+id: CAP-012
+type: capability
+title: Brief Readiness Assessment
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-013
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User requests readiness assessment or system evaluates readiness before spec derivation.
+
+## Action
+
+The system shall:
+1. Evaluate brief across defined dimensions: goal clarity, actor clarity, constraint clarity, conflict resolution, vocabulary quality, acceptance clarity, confidence coverage
+2. Apply weighted scoring to each dimension based on project requirements
+3. Identify specific readiness blockers and improvement recommendations
+4. Assess overall brief maturity against derivation readiness criteria
+5. Generate qualitative readiness judgment with supporting evidence
+6. Provide actionable guidance for addressing readiness gaps
+7. Track readiness progression over time
+
+## Outcome
+
+Qualitative readiness assessment with:
+- Overall judgment: not ready / partially ready / ready for spec derivation / ready for client review
+- Dimension-specific scoring with detailed rationale
+- Specific blocker identification and resolution guidance
+- Progress tracking toward derivation readiness
+- Evidence-based recommendations for brief improvement
+
+## Scope
+
+Applies to brief assessment at project level. Includes all approved brief elements and their relationships. Excludes spec quality assessment or architectural readiness evaluation.
+
+## Edge Cases
+
+1. **Borderline readiness**: System shall provide detailed rationale for marginal cases and suggest specific validation steps
+2. **Rapidly changing briefs**: System shall account for brief volatility in readiness scoring and recommend stabilization
+
+## Failure Behaviour
+
+When readiness assessment fails:
+- Provide conservative readiness estimate ('not ready') to prevent premature derivation
+- Report specific assessment failures and manual evaluation requirements
+- Preserve previous readiness assessments for comparison
+- Log assessment failures for scoring algorithm improvement
+- Offer manual readiness checklist as fallback evaluation method

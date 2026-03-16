@@ -1,0 +1,54 @@
+id: CAP-001
+type: capability
+title: Project Creation Capability
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-001
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User initiates project creation through the web interface by providing a project name and description.
+
+## Action
+
+The system shall:
+1. Create a new GitHub repository with the project name
+2. Generate a complete directory structure following the canonical Equilibrium project template
+3. Initialize empty element stores for all brief and spec artifact types
+4. Register the project in the global project registry with unique identifier, metadata, and repository link
+5. Configure project-specific settings and permissions
+
+## Outcome
+
+A fully operational project workspace is available with:
+- Dedicated GitHub repository accessible to the consultant
+- Complete scaffolded directory structure matching the canonical template
+- Initialized element storage ready for brief capture
+- Project registration enabling multi-project navigation
+- Project-specific configuration applied
+
+## Scope
+
+Applies to all new project creation requests from authenticated consultants. Excludes modification of existing projects or bulk project operations.
+
+## Edge Cases
+
+1. **Duplicate project names**: System shall append a numeric suffix to ensure unique project identifiers
+2. **GitHub API failures**: System shall retry repository creation up to 3 times before failing gracefully with error message
+
+## Failure Behaviour
+
+When project creation cannot complete:
+- Roll back any partially created resources (repository, directories, registry entries)
+- Display specific error message indicating failure point
+- Preserve user input for retry attempt
+- Log failure details for debugging

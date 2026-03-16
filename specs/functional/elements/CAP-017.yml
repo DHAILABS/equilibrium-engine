@@ -1,0 +1,58 @@
+id: CAP-017
+type: capability
+title: Gap Detection Between Brief and Spec
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-020
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User requests gap analysis or system automatically detects mismatches when brief or spec elements change.
+
+## Action
+
+The system shall:
+1. Compare approved brief elements against derived and approved spec elements
+2. Identify missing spec coverage for brief requirements
+3. Detect conflicting claims between brief and spec assertions
+4. Flag ambiguous brief elements without clear spec interpretation
+5. Surface spec elements that lack brief justification
+6. Analyze semantic consistency across brief-spec pairs
+7. Generate typed gap records with specific mismatch descriptions
+8. Maintain gap registry with current mismatch status
+
+## Outcome
+
+Typed mismatch inventory with:
+- Missing coverage gaps identifying unspecified brief requirements
+- Conflict gaps highlighting contradictory brief-spec claims
+- Ambiguity gaps flagging unclear spec interpretation
+- Justification gaps showing unjustified spec elements
+- Semantic consistency gaps across related elements
+
+## Scope
+
+Applies to all approved brief elements and their corresponding spec elements. Includes automated gap detection and maintenance. Excludes gaps between other canonical state pairs.
+
+## Edge Cases
+
+1. **Rapidly changing specifications**: System shall batch gap detection to avoid constant mismatch alerts during active development
+2. **Partial spec coverage**: System shall distinguish between incomplete derivation and genuine specification gaps
+
+## Failure Behaviour
+
+When gap detection fails:
+- Preserve existing gap registry to maintain current analysis
+- Report specific analysis failures (comparison errors, semantic analysis timeouts)
+- Provide manual gap identification interface as fallback
+- Log detection failures for algorithm improvement
+- Continue gap monitoring for elements where detection succeeded

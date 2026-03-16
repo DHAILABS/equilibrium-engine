@@ -1,0 +1,58 @@
+id: CAP-020
+type: capability
+title: Repository Inventory Import
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-027
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User initiates repository inventory scan or system automatically scans repository for actual implementation state.
+
+## Action
+
+The system shall:
+1. Scan repository directory structure and catalog all files and folders
+2. Parse package manifests (package.json, requirements.txt, pom.xml, etc.) to identify dependencies
+3. Analyze lockfiles for exact dependency versions and transitive dependencies
+4. Extract configuration files and their settings
+5. Identify code modules, services, and components from file organization
+6. Generate inventory elements representing actual system state
+7. Create machine-readable catalog of existing implementation
+8. Update inventory when repository changes are detected
+
+## Outcome
+
+Comprehensive actual inventory with:
+- Complete file system structure catalog
+- Dependency inventory with version information
+- Configuration state documentation
+- Component and module identification
+- Machine-readable implementation state for gap analysis
+
+## Scope
+
+Applies to accessible repository content including source code, configuration, and manifest files. Includes automated scanning and change detection. Excludes external dependencies not declared in manifests.
+
+## Edge Cases
+
+1. **Large repositories**: System shall handle large codebases with progress indicators and incremental scanning options
+2. **Access permission issues**: System shall report inaccessible files and provide partial inventory with coverage gaps noted
+
+## Failure Behaviour
+
+When inventory import fails:
+- Preserve existing inventory to maintain baseline for comparison
+- Report specific scan failures (file access errors, parsing failures)
+- Provide partial inventory for successfully scanned components
+- Log detailed failure context for scanning algorithm improvement
+- Offer manual inventory entry for critical missing components

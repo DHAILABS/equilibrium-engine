@@ -1,16 +1,45 @@
 id: CNST-002
 type: constraint
-title: Element-centric storage (one file per element)
-status: agreed
-confidence: high
-sourceType: consultant_entry
-sourceRef: docs/roadmap.md
-speakerOrAuthor: Zac
-capturedAt: '2026-03-16T00:00:00Z'
-canonicalArtifact: spec
-derivedFrom: []
+title: Docker Deployment Infrastructure
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: environment_spec
+derivedFrom:
+  - ASMP-004
 tracesTo: []
 blockedBy: []
 supersedes: []
 ---
-Every piece of project information is stored as one YAML file per element. Documents are rendered views over element collections, not sources of truth. This enables per-element provenance, merge-friendly concurrent work, and field-level mutation history.
+## Constraint Type
+
+Mandated technology constraint - Docker containerization is the required deployment model for the web application.
+
+## Source Authority
+
+Project stakeholder decision based on existing infrastructure capabilities and operational requirements.
+
+## Applicability
+
+Applies to the complete web application deployment in production environment. All application components must be containerized and deployable via Docker.
+
+## Verification Method
+
+- Application successfully builds as Docker container image
+- Container runs on target server infrastructure (Netcup RS 8000 G12 with 64GB RAM)
+- Data persistence verified through Docker volume mount at /data/projects/
+- TLS and routing functionality confirmed through Traefik integration
+- Application accessible via HTTPS through Traefik proxy
+
+## Impact on Design
+
+- Application architecture must support containerization (stateless design preferred)
+- Data storage must utilize persistent Docker volumes rather than container-local storage
+- Application must bind to container networking interfaces
+- Configuration must support environment variable injection or mounted config files
+- Application startup must handle Docker container lifecycle (graceful shutdown, health checks)
+- Resource usage must remain within server capacity (64GB RAM constraint)
+- Integration with Traefik requires appropriate labels/configuration for service discovery and routing

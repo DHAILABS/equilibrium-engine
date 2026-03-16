@@ -1,0 +1,58 @@
+id: CAP-013
+type: capability
+title: Spec Derivation Engine
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-015
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User triggers spec derivation from approved brief elements or system automatically triggers derivation on brief approval.
+
+## Action
+
+The system shall:
+1. Process approved brief elements through derivation pipeline
+2. Transform each brief element into appropriate spec elements (capabilities, rules, data entities, constraints, acceptance criteria)
+3. Apply quality templates for structured spec element output
+4. Generate stable identifiers for derived spec elements
+5. Create trace links from spec elements back to source brief elements
+6. Route derived elements to correct spec sub-artifacts based on content analysis
+7. Validate derived elements against spec schema requirements
+8. Queue derived spec elements for review and approval
+
+## Outcome
+
+Structured specification elements with:
+- Complete transformation of brief into formal specifications
+- Appropriate element routing to functional, NFR, data, integration, environment, and verification specs
+- Stable traceability links to source brief elements
+- Quality-templated structure for consistent specification format
+- Draft status requiring consultant review and approval
+
+## Scope
+
+Applies to all approved brief elements eligible for derivation. Includes automatic routing and quality templating. Excludes manual spec creation or spec modification without brief traceability.
+
+## Edge Cases
+
+1. **Ambiguous routing decisions**: System shall flag elements requiring manual routing review and provide routing suggestions
+2. **Large brief sets**: System shall process derivation in batches with progress tracking and cancellation options
+
+## Failure Behaviour
+
+When derivation fails:
+- Preserve source brief elements unchanged
+- Save partial derivation results if any elements completed successfully
+- Report specific failure points (LLM errors, schema validation, routing failures)
+- Provide manual spec creation options for failed derivations
+- Log detailed failure context for derivation pipeline improvement

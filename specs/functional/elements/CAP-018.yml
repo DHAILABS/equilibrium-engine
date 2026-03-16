@@ -1,0 +1,58 @@
+id: CAP-018
+type: capability
+title: Gap Classification and Prioritization
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-023
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+System classifies detected gaps by type and severity during gap detection or user requests gap prioritization.
+
+## Action
+
+The system shall:
+1. Classify each gap by mismatch type: missing, conflicting, ambiguous, unjustified, divergent, regulatory non-compliance
+2. Assess gap severity as blocker, significant, or minor based on impact analysis
+3. Consider project context and stakeholder priorities in severity assessment
+4. Assign urgency ratings based on project timeline and dependencies
+5. Generate prioritized gap remediation recommendations
+6. Update gap classifications as project context changes
+7. Maintain classification audit trail with rationale
+8. Support manual classification override with justification
+
+## Outcome
+
+Prioritized gap inventory with:
+- Type-based classification enabling targeted resolution approaches
+- Severity-based prioritization for resource allocation
+- Context-aware urgency assessment
+- Actionable remediation guidance
+- Classification audit trail for decision transparency
+
+## Scope
+
+Applies to all detected gaps between brief and spec states. Includes automated classification with manual override capability. Excludes gap resolution actions or implementation guidance.
+
+## Edge Cases
+
+1. **Borderline severity cases**: System shall provide detailed rationale for marginal severity assignments and suggest validation steps
+2. **Classification conflicts**: System shall flag gaps with conflicting classification indicators and request manual resolution
+
+## Failure Behaviour
+
+When classification fails:
+- Preserve gap records with default classifications for manual review
+- Report specific classification failures (severity analysis errors, type detection issues)
+- Provide manual classification interface for failed automatic assessment
+- Log classification failures for algorithm refinement
+- Maintain existing classifications when updates fail

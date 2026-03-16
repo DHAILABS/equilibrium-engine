@@ -1,0 +1,58 @@
+id: CAP-011
+type: capability
+title: Brief Critique and Quality Assessment
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-012
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User requests brief critique or system automatically triggers quality assessment on brief changes.
+
+## Action
+
+The system shall:
+1. Analyze brief elements for internal conflicts and contradictions
+2. Identify coverage gaps in essential areas (goals, personas, constraints)
+3. Evaluate user story quality for missing components (persona, trigger, outcome)
+4. Flag unexamined assertions with significant design implications
+5. Detect ambiguous or vague requirements language
+6. Assess completeness of acceptance criteria and success measures
+7. Generate structured critique report with specific issues and locations
+8. Prioritize findings by impact on project success
+
+## Outcome
+
+Comprehensive quality assessment with:
+- Specific conflict identification with element references
+- Coverage gap analysis highlighting missing requirement areas
+- User story quality evaluation with improvement suggestions
+- Flagged assumptions requiring validation or design decisions
+- Prioritized issue list for systematic resolution
+
+## Scope
+
+Applies to all approved brief elements within a project. Includes cross-element analysis and requirement quality patterns. Excludes spec-level quality assessment or implementation guidance.
+
+## Edge Cases
+
+1. **Minimal brief content**: System shall provide guidance on minimum viable brief structure rather than false negatives
+2. **Conflicting critique results**: System shall rank conflicts by confidence and provide disambiguation guidance
+
+## Failure Behaviour
+
+When critique cannot complete:
+- Provide partial analysis results if any critique components succeeded
+- Report specific analysis failures (LLM timeout, parsing errors)
+- Offer manual quality checklist as fallback
+- Log critique failures for algorithm improvement
+- Maintain previous critique results until new analysis completes

@@ -1,0 +1,58 @@
+id: CAP-019
+type: capability
+title: Gap Registry Views and Filtering
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-025
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User accesses gap registry or applies filters to focus on specific mismatch categories.
+
+## Action
+
+The system shall:
+1. Display all open gaps in a structured registry view
+2. Provide filtering by adjacent pair (Brief-Spec, Spec-Architecture, Architecture-Inventory)
+3. Enable filtering by mismatch class (missing, conflicting, ambiguous, unjustified, divergent, regulatory)
+4. Support severity-based filtering (blocker, significant, minor)
+5. Allow status filtering (open, in progress, resolved, deferred)
+6. Provide combined filter operations with logical operators
+7. Support sorting by priority, age, severity, or classification
+8. Enable gap tracking and convergence monitoring over time
+
+## Outcome
+
+Focused gap management with:
+- Filtered views highlighting priority mismatches
+- Multi-dimensional filtering for targeted gap analysis
+- Sorted displays optimized for remediation workflow
+- Progress tracking toward equilibrium state
+- Historical trend analysis of gap resolution
+
+## Scope
+
+Applies to all detected gaps across all canonical state pairs. Includes complex filtering and sorting operations. Excludes gap resolution workflows or detailed remediation planning.
+
+## Edge Cases
+
+1. **Empty filter results**: System shall provide guidance on filter adjustment and show available gap categories
+2. **Complex filter combinations**: System shall validate filter logic and warn of contradictory filter conditions
+
+## Failure Behaviour
+
+When gap registry fails:
+- Display cached gap data if available to maintain workflow continuity
+- Report specific failure causes (database errors, filter parsing issues)
+- Provide simplified gap list without filtering as fallback
+- Maintain filter settings for recovery when system restored
+- Log registry failures for system reliability improvement

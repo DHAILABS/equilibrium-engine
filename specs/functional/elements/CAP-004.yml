@@ -1,0 +1,57 @@
+id: CAP-004
+type: capability
+title: Document Upload and Element Extraction
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-005
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User uploads one or more documents (transcripts, meeting notes, RFPs, emails) through the document upload interface.
+
+## Action
+
+The system shall:
+1. Accept uploaded documents and validate file formats
+2. Process document content through the LLM-based extraction pipeline
+3. Identify and extract typed brief elements (goals, personas, constraints, facts, assumptions, questions, terms)
+4. Apply appropriate abstraction level normalization
+5. Generate provenance metadata linking elements to source documents
+6. Save extracted elements as draft YAML files following canonical schema
+7. Queue elements for review and approval workflow
+
+## Outcome
+
+Structured brief elements are available with:
+- Well-typed elements at correct abstraction level
+- Complete provenance tracing to source documents
+- Draft status requiring review before approval
+- Automatic classification into element types
+- Schema-compliant YAML representation
+
+## Scope
+
+Applies to all supported document formats containing client requirements information. Handles unstructured, messy input. Excludes binary formats without text content or non-requirements documents.
+
+## Edge Cases
+
+1. **Corrupted or unreadable files**: System shall report specific format errors and skip invalid files while processing valid ones
+2. **Large document sets**: System shall process in batches with progress indicators and allow cancellation
+
+## Failure Behaviour
+
+When extraction cannot complete:
+- Save partial results if any elements were successfully extracted
+- Report specific failure points (file format, LLM timeout, schema validation)
+- Preserve uploaded files for retry attempts
+- Provide manual element creation option for failed extractions
+- Log detailed error context for pipeline improvement

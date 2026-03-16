@@ -1,0 +1,57 @@
+id: INTG-001
+type: integration
+title: MCP Context Service Integration
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: integration_spec
+derivedFrom:
+  - GOAL-034
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## External System
+
+Model Context Protocol (MCP) clients - external agents and AI assistants that need access to project context and organizational knowledge.
+
+## Direction
+
+Inbound - the system serves as an MCP server, responding to queries from MCP clients.
+
+## Protocol
+
+Model Context Protocol (MCP) - JSON-RPC based protocol for exposing structured context to AI agents.
+
+## Data Contract
+
+The system exposes two distinct namespaces:
+
+**Organizational Namespace:**
+- Organization-wide conventions and standards
+- Cross-project best practices
+- Shared architectural patterns
+- Company-specific guidelines
+
+**Project-Specific Namespace:**
+- Current project specifications
+- Project decisions and rationale
+- Project constraints and assumptions
+- Project-specific context and history
+
+Data format: Structured JSON responses containing context metadata, content, and relevance scoring. Each response includes context type, scope (org/project), last updated timestamp, and content body.
+
+## Authentication
+
+MCP protocol-level authentication using standard MCP auth mechanisms. The system validates client credentials before serving context data.
+
+## Error Handling
+
+When project data is unavailable or corrupted, the system returns appropriate MCP error responses with descriptive messages. If organizational context cannot be loaded, the system falls back to project-only context where possible. Connection failures to underlying data stores result in service unavailable responses.
+
+## SLA/Rate Limits
+
+No specific rate limits defined for MCP queries, but the system should handle concurrent client connections efficiently. Response time target: under 500ms for typical context queries. The service should support multiple simultaneous MCP client connections without degradation.

@@ -1,0 +1,58 @@
+id: CAP-009
+type: capability
+title: Epic Grouping and Management
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-010
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User assigns elements to named epics or views elements grouped by epic.
+
+## Action
+
+The system shall:
+1. Maintain registry of named epics with descriptions and metadata
+2. Allow assignment of elements to epics during creation or editing
+3. Support creation of new epics during element assignment
+4. Group elements by epic in navigation and display views
+5. Calculate completeness metrics per epic (element counts, approval status)
+6. Provide epic-level operations (rename, merge, dissolve)
+7. Maintain epic assignment history and audit trail
+8. Support unassigned elements category for ungrouped items
+
+## Outcome
+
+Elements are organized with:
+- Visual clustering by named epic groups
+- Completeness assessment per feature area
+- Flexible epic management operations
+- Clear visibility of ungrouped elements
+- Epic-based navigation and filtering
+
+## Scope
+
+Applies to all element types across all projects. Includes epic lifecycle management and element assignment tracking. Excludes hierarchical epic structures or cross-project epic sharing.
+
+## Edge Cases
+
+1. **Epic name conflicts**: System shall enforce unique epic names within project scope
+2. **Orphaned epic references**: System shall detect and offer cleanup for epics with no assigned elements
+
+## Failure Behaviour
+
+When epic operations fail:
+- Preserve existing epic assignments to prevent data loss
+- Report specific operation failures (name conflicts, circular references)
+- Provide rollback for failed bulk epic operations
+- Maintain referential integrity between elements and epics
+- Log epic management failures for workflow improvement

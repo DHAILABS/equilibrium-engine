@@ -1,0 +1,49 @@
+id: INTG-002
+type: integration
+title: LiteLLM Proxy Integration
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: integration_spec
+derivedFrom:
+  - ASMP-001
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## External System
+
+LiteLLM proxy service providing access to Large Language Model inference capabilities, specifically configured for Claude Sonnet 4.
+
+## Direction
+
+Outbound - the system makes requests to the LiteLLM proxy for various AI operations.
+
+## Protocol
+
+HTTP/REST API calls to the LiteLLM proxy endpoint. All LLM inference operations are routed through this single proxy service.
+
+## Data Contract
+
+The system sends structured prompts and receives generated text responses for multiple use cases:
+- **Extraction operations**: Send raw text, receive structured data extracts
+- **Critique operations**: Send content for analysis, receive feedback and suggestions
+- **Derivation operations**: Send requirements/context, receive derived specifications
+- **Agent work**: Send task descriptions, receive generated responses
+
+Request format: Standard LiteLLM API format with prompt text, model parameters, and operation type indicators. Response format: Generated text content with metadata including token usage and confidence scores where available.
+
+## Authentication
+
+API key-based authentication using the LiteLLM proxy's authentication mechanism. Credentials are managed through environment variables and not stored in application code.
+
+## Error Handling
+
+When the LiteLLM proxy is unavailable, all AI-dependent operations must gracefully degrade or queue for retry. The system handles rate limiting from the underlying LLM provider by implementing backoff strategies. Invalid responses or parsing errors from the LLM are logged and result in appropriate error messages to users.
+
+## SLA/Rate Limits
+
+The system respects the rate limits imposed by the LiteLLM proxy and underlying Claude Sonnet 4 service. No local caching of responses is implemented - each operation requires a fresh API call. The system should handle temporary service unavailability with appropriate retry logic and user notification.

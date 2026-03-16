@@ -1,0 +1,55 @@
+id: CAP-002
+type: capability
+title: Project Dashboard Display
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-002
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User navigates to the main dashboard or refreshes the dashboard view.
+
+## Action
+
+The system shall:
+1. Query all registered projects from the project registry
+2. Calculate spine status metrics for each project including element counts by type and status
+3. Identify open gaps and their severity distribution
+4. Assess ticket progress and completion rates
+5. Aggregate status indicators for quick visual assessment
+6. Render dashboard with project cards showing key metrics
+
+## Outcome
+
+A comprehensive dashboard displays:
+- List of all projects with summary cards
+- Element counts (brief, spec) and approval status per project
+- Gap count and severity indicators
+- Visual status indicators highlighting projects needing attention
+- Quick navigation links to individual project workspaces
+
+## Scope
+
+Applies to all projects accessible to the authenticated consultant. Includes both active and completed projects. Excludes detailed project content or individual element listings.
+
+## Edge Cases
+
+1. **Empty project portfolio**: Dashboard shall display welcome message with project creation guidance
+2. **Corrupted project data**: Dashboard shall show project with error indicator and provide recovery options
+
+## Failure Behaviour
+
+When dashboard cannot load:
+- Display cached project list if available
+- Show error indicator for projects with loading failures
+- Provide manual refresh option
+- Log detailed error information for troubleshooting

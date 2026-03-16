@@ -1,0 +1,58 @@
+id: CAP-008
+type: capability
+title: Element Editing Capability
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-009
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User selects edit action for an existing element.
+
+## Action
+
+The system shall:
+1. Load current element data into editable form
+2. Allow modification of title, body, confidence level, and epic assignment
+3. Preserve original element identifier to maintain referential integrity
+4. Validate changes against schema requirements
+5. Update element metadata with edit timestamp and user information
+6. Save modified element while preserving change history
+7. Update any dependent references or indexes
+8. Maintain traceability links to derived elements
+
+## Outcome
+
+Element is updated with:
+- Modified content preserving element identity
+- Updated metadata reflecting latest changes
+- Preserved referential integrity across system
+- Change history for audit purposes
+- Maintained traceability relationships
+
+## Scope
+
+Applies to all element types in any status (draft, agreed, rejected). Includes content modification and metadata updates. Excludes element type changes or identifier modifications.
+
+## Edge Cases
+
+1. **Elements with derived specs**: System shall warn that changes may require re-derivation of dependent spec elements
+2. **Concurrent editing**: System shall detect conflicts and provide merge resolution interface
+
+## Failure Behaviour
+
+When editing fails:
+- Preserve original element content unchanged
+- Display specific validation errors for correction
+- Provide draft save option for partial edits
+- Warn of potential impact on derived elements
+- Log edit failures for pattern analysis

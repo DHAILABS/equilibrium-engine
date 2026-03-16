@@ -1,6 +1,6 @@
 id: GOAL-020
 type: goal
-title: "Detect Brief-to-Spec mismatches (Gap\u2081)"
+title: Detect Brief-to-Spec mismatches (Gap₁)
 status: agreed
 confidence: high
 sourceType: consultant_entry
@@ -9,7 +9,8 @@ speakerOrAuthor: Zac
 capturedAt: '2026-03-16T00:00:00Z'
 canonicalArtifact: brief
 derivedFrom: []
-tracesTo: []
+tracesTo:
+  - CAP-017
 blockedBy: []
 supersedes: []
 epic: Gap Detection

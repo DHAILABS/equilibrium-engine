@@ -1,0 +1,48 @@
+id: INTG-003
+type: integration
+title: GitHub API Integration
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: integration_spec
+derivedFrom:
+  - ASMP-003
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## External System
+
+GitHub REST API for repository management and git operations.
+
+## Direction
+
+Outbound - the system creates and manages repositories on GitHub as part of project creation workflow.
+
+## Protocol
+
+HTTP/REST API using GitHub's REST API v3/v4. Git operations use standard git protocol over HTTPS.
+
+## Data Contract
+
+The system performs the following operations:
+- **Repository creation**: Send repository metadata (name, description, visibility), receive repository details including clone URL
+- **Git push operations**: Push local project files and directory structure to the remote GitHub repository
+- **Repository metadata updates**: Update repository descriptions, topics, and settings as needed
+
+Data exchanged includes repository configuration, file contents, commit metadata, and standard git objects (trees, blobs, commits).
+
+## Authentication
+
+GitHub Personal Access Token authentication configured through environment variables. The token requires repository creation and push permissions. No OAuth flow - uses direct token-based authentication for API calls and git operations.
+
+## Error Handling
+
+When GitHub API is unavailable, project creation fails with appropriate error messaging to the user. Network timeouts during git push operations should retry with exponential backoff. API rate limit exceeded responses should queue operations or notify users of temporary delays. Authentication failures indicate invalid or expired tokens and require user intervention.
+
+## SLA/Rate Limits
+
+GitHub API rate limits apply (typically 5000 requests per hour for authenticated users). The system should monitor rate limit headers and implement appropriate throttling. Git push operations have no specific rate limits but large repositories may experience longer transfer times. Repository creation is limited by GitHub's repository count limits per user/organization.

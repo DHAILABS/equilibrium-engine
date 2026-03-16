@@ -1,0 +1,58 @@
+id: CAP-016
+type: capability
+title: Traceability Link Management
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-018
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+System creates, updates, or queries traceability relationships between brief and spec elements.
+
+## Action
+
+The system shall:
+1. Generate stable, unique identifiers for all brief and spec elements
+2. Create explicit trace links during spec derivation from brief elements to derived spec elements
+3. Maintain bidirectional traceability (brief-to-spec and spec-to-brief)
+4. Preserve trace links through element editing and lifecycle changes
+5. Detect and flag broken trace links from element deletions or ID changes
+6. Provide impact analysis showing affected spec elements when brief elements change
+7. Support trace link queries and visualization
+8. Maintain trace link audit trail with timestamps and change reasons
+
+## Outcome
+
+Complete traceability matrix with:
+- Stable element identifiers immune to content changes
+- Bidirectional navigation between brief and spec elements
+- Impact analysis for change management
+- Broken link detection and resolution
+- Audit trail of traceability relationships
+
+## Scope
+
+Applies to all brief-to-spec relationships and their lifecycle management. Includes automated link creation and maintenance. Excludes external traceability to non-Equilibrium artifacts.
+
+## Edge Cases
+
+1. **Orphaned spec elements**: System shall detect specs without brief traceability and flag for resolution or manual linking
+2. **Many-to-many relationships**: System shall handle complex traceability patterns where one brief element derives multiple specs or vice versa
+
+## Failure Behaviour
+
+When traceability operations fail:
+- Preserve existing trace links to prevent relationship loss
+- Report specific traceability failures (ID conflicts, circular references)
+- Provide manual link repair interface for broken relationships
+- Log traceability failures for systematic resolution
+- Maintain referential integrity between brief and spec stores

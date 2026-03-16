@@ -1,0 +1,58 @@
+id: CAP-010
+type: capability
+title: Element Provenance Tracking
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-011
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+System captures provenance metadata during element creation from any source (document extraction, interview, manual creation).
+
+## Action
+
+The system shall:
+1. Record complete source information for each element (document name, interview session, manual entry)
+2. Capture authorship details (who provided the information, who entered it)
+3. Timestamp all element creation and modification events
+4. Track confidence levels with source-based defaults (transcript=lower, formal document=higher)
+5. Maintain immutable provenance chain through element lifecycle
+6. Link elements to specific document sections or interview turns
+7. Preserve provenance through element editing and derivation
+8. Provide provenance query and filtering capabilities
+
+## Outcome
+
+Complete audit trail exists with:
+- Traceable origin for every element and claim
+- Confidence calibration based on source type
+- Immutable provenance chain for compliance
+- Source-specific metadata preservation
+- Query capability for provenance analysis
+
+## Scope
+
+Applies to all elements from all creation sources. Includes both human and system-generated provenance. Excludes external provenance sources not integrated with the system.
+
+## Edge Cases
+
+1. **Missing source documents**: System shall preserve provenance metadata even if source files become unavailable
+2. **Bulk provenance updates**: System shall maintain individual element provenance integrity during bulk operations
+
+## Failure Behaviour
+
+When provenance tracking fails:
+- Continue element creation with partial provenance rather than blocking
+- Log missing provenance data for later reconstruction
+- Provide manual provenance entry for failed automatic tracking
+- Maintain existing provenance data integrity
+- Alert administrators to systematic provenance failures

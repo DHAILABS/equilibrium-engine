@@ -1,0 +1,59 @@
+id: CAP-022
+type: capability
+title: Existing System Capabilities Baseline
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - FACT-001
+  - FACT-002
+  - FACT-003
+  - FACT-004
+  - FACT-005
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+System initialization or capability assessment requests.
+
+## Action
+
+The system provides existing implemented capabilities:
+1. **Core Framework**: Spec-driven development framework tracking Brief, Spec, Intended Architecture, and Actual Inventory states with typed gap analysis
+2. **Web Interface**: Next.js application with Docker deployment providing project dashboard, document upload, guided interviews, manual element creation, element review workflows, bulk operations, spine visualization, and spec derivation triggering
+3. **Element Extraction**: LiteLLM-based pipeline processing documents and interviews into typed brief elements (goals, personas, constraints, facts, assumptions, terms, questions) with provenance tracking and YAML storage
+4. **Spec Derivation**: Pipeline transforming approved brief elements into spec elements routed to appropriate sub-artifacts (Functional, NFR, Data, Integration, Environment, Verification) with trace link maintenance
+5. **Multi-Project Support**: Project registry with individual GitHub repositories, scaffolded directory structures, and isolated element stores per project
+
+## Outcome
+
+Operational system baseline with:
+- Complete web-based project management interface
+- Automated element extraction from multiple input sources
+- Structured spec derivation with quality templating
+- Multi-project isolation and GitHub integration
+- Foundation for gap detection and convergence monitoring
+
+## Scope
+
+Defines existing capabilities available as foundation for additional development. Includes all currently implemented features and integration points. Excludes planned capabilities not yet implemented.
+
+## Edge Cases
+
+1. **Legacy project migration**: System shall support projects created before full multi-project implementation
+2. **Capability versioning**: System shall track capability maturity and flag experimental or beta features
+
+## Failure Behaviour
+
+When baseline capabilities fail:
+- Gracefully degrade to core functionality where possible
+- Provide clear error reporting for non-functional capabilities
+- Maintain data integrity during capability failures
+- Log capability failures for system reliability monitoring
+- Offer manual alternatives for failed automated capabilities

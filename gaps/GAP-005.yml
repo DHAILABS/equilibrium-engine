@@ -1,0 +1,15 @@
+id: GAP-005
+adjacentPair: brief_spec
+direction: upstream_ahead
+mismatchClass: missing
+resolutionMode: implement
+severity: significant
+upstreamRef:
+  - PERS-004
+downstreamRef: []
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-16T20:20:45.697Z'
+---
+System: No spec elements derived from this brief element

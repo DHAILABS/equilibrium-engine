@@ -1,0 +1,41 @@
+id: CNST-001
+type: constraint
+title: Single User Concurrency Model
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: nfr_spec
+derivedFrom:
+  - ASMP-002
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Quality Attribute
+Concurrency and Access Control
+
+## Metric
+Number of concurrent authenticated users and concurrent operations per user session
+
+## Target
+- Maximum 1 authenticated user session at any time
+- Single-threaded operation model with no concurrent editing detection required
+- All system operations assume exclusive user access
+
+## Measurement Method
+- Authentication system enforces single session limit
+- Session management tracks active user count
+- No conflict resolution mechanisms needed for concurrent modifications
+
+## Degradation Behaviour
+When multiple authentication attempts occur:
+- New login invalidates previous session
+- System maintains data consistency through exclusive access
+- No data loss occurs during session transitions
+- User receives clear notification of session replacement
+
+## Priority
+Hard requirement - the system architecture assumes single-user operation and does not implement multi-user concurrency controls, conflict resolution, or collaborative editing features.

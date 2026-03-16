@@ -1,0 +1,15 @@
+id: GAP-001
+adjacentPair: brief_spec
+direction: upstream_ahead
+mismatchClass: missing
+resolutionMode: investigate
+severity: significant
+upstreamRef:
+  - FACT-006
+downstreamRef: []
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-16T20:20:45.697Z'
+---
+Bootstrap project has system-level brief, not user stories: Needs clarification on whether the bootstrap project should be migrated to proper user story format or left as-is for reference

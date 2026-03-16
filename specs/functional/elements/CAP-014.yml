@@ -1,0 +1,61 @@
+id: CAP-014
+type: capability
+title: Automatic Spec Element Routing
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-016
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+Derived spec elements require routing to appropriate sub-artifacts during derivation process.
+
+## Action
+
+The system shall:
+1. Analyze derived element content to determine appropriate sub-artifact destination
+2. Route behavioral requirements to Functional Specification
+3. Route quality attributes and performance requirements to Non-Functional Requirements
+4. Route information structures and data definitions to Data Specification
+5. Route external system interfaces to Integration Specification
+6. Route environmental constraints and deployment requirements to Environment Specification
+7. Route test criteria and validation rules to Verification Specification
+8. Handle ambiguous elements by flagging for manual routing review
+9. Maintain routing audit trail and rationale
+
+## Outcome
+
+Spec elements are correctly distributed with:
+- Behavioral specs in Functional sub-artifact
+- Quality requirements in NFR sub-artifact
+- Data structures in Data sub-artifact
+- Interface definitions in Integration sub-artifact
+- Environmental constraints in Environment sub-artifact
+- Test specifications in Verification sub-artifact
+- Routing audit trail for verification and adjustment
+
+## Scope
+
+Applies to all derived spec elements during automated derivation. Includes content analysis for routing decisions. Excludes manual element placement or cross-artifact element duplication.
+
+## Edge Cases
+
+1. **Multi-faceted elements**: System shall flag elements spanning multiple sub-artifacts and suggest decomposition or primary routing
+2. **Unclassifiable content**: System shall route to Functional by default and flag for manual review
+
+## Failure Behaviour
+
+When routing fails:
+- Place elements in Functional specification as safe default
+- Flag routing failures for manual review and correction
+- Preserve element content and derivation metadata
+- Log routing decision context for algorithm improvement
+- Provide manual routing interface for failed automatic routing

@@ -1,0 +1,58 @@
+id: CAP-015
+type: capability
+title: Derived Spec Element Review
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-017
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User accesses derived spec element review interface or system queues newly derived elements for review.
+
+## Action
+
+The system shall:
+1. Present derived spec elements with original brief context and derivation rationale
+2. Provide edit, approve, and reject actions for individual spec elements
+3. Display trace links to source brief elements for context verification
+4. Support bulk approval for related spec elements
+5. Allow editing of derived content while preserving traceability
+6. Validate edited spec elements against quality templates and schema
+7. Transition approved elements to canonical specification status
+8. Maintain derivation audit trail and consultant review decisions
+
+## Outcome
+
+Spec elements achieve canonical status with:
+- Consultant validation and approval of LLM-derived content
+- Corrected derivation errors through editing capability
+- Maintained traceability to source brief elements
+- Quality-assured specifications meeting project standards
+- Complete review audit trail for compliance
+
+## Scope
+
+Applies to all LLM-derived spec elements requiring consultant approval. Includes editing and correction capabilities. Excludes manually created spec elements or automated approval processes.
+
+## Edge Cases
+
+1. **Extensive derivation errors**: System shall provide batch rejection with re-derivation option for poor-quality results
+2. **Modified brief sources**: System shall flag spec elements whose source brief elements have changed since derivation
+
+## Failure Behaviour
+
+When review operations fail:
+- Preserve spec elements in draft status to prevent premature canonicalization
+- Report specific failure causes (validation errors, concurrent edits)
+- Provide offline editing capabilities for system failures
+- Maintain traceability integrity through review failures
+- Log review process failures for workflow optimization

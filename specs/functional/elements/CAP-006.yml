@@ -1,0 +1,57 @@
+id: CAP-006
+type: capability
+title: Manual Element Creation
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-007
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User selects manual element creation option and specifies element type.
+
+## Action
+
+The system shall:
+1. Present element creation form with fields for type, title, body, confidence level, and optional epic assignment
+2. Validate required fields and element type constraints
+3. Generate unique element identifier following canonical naming scheme
+4. Create provenance record indicating manual creation by user with timestamp
+5. Save element as draft YAML file following canonical schema
+6. Add element to project element store
+7. Update element indexes and navigation
+
+## Outcome
+
+A new draft element exists with:
+- Complete element metadata (type, title, body, confidence, epic)
+- Unique identifier for stable referencing
+- Manual provenance indicating direct user authorship
+- Draft status requiring approval workflow
+- Schema-compliant YAML representation
+
+## Scope
+
+Applies to all supported brief element types (goals, personas, facts, constraints, assumptions, questions, terms). Includes epic assignment and confidence rating. Excludes bulk element creation or import operations.
+
+## Edge Cases
+
+1. **Duplicate titles within type**: System shall warn user and suggest title modification or confirm intentional duplication
+2. **Invalid epic references**: System shall validate epic exists or offer to create new epic
+
+## Failure Behaviour
+
+When element creation fails:
+- Preserve user input in form for correction
+- Display specific validation errors for required fields
+- Provide guidance on schema compliance issues
+- Allow draft saving with validation warnings for later completion
+- Log schema validation failures for pattern analysis

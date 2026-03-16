@@ -1,0 +1,56 @@
+id: CAP-003
+type: capability
+title: Project Deletion Capability
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-003
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User selects delete action for a specific project and confirms deletion intent.
+
+## Action
+
+The system shall:
+1. Verify user authorization for project deletion
+2. Remove the associated GitHub repository completely
+3. Delete all local project directories and files
+4. Remove project entry from the global registry
+5. Clean up any cached data or temporary files
+6. Update dashboard to reflect removal
+
+## Outcome
+
+Complete project removal with:
+- GitHub repository deleted and no longer accessible
+- All local project files and directories removed
+- Project registry updated to exclude deleted project
+- Dashboard updated to show current project list
+- No orphaned data or configuration remaining
+
+## Scope
+
+Applies to individual project deletion requests from project owners. Excludes bulk deletion operations or cascade deletion of related external resources.
+
+## Edge Cases
+
+1. **GitHub deletion fails**: System shall complete local cleanup and mark repository as orphaned for manual cleanup
+2. **Active sessions**: System shall warn if project has active editing sessions and require explicit confirmation
+
+## Failure Behaviour
+
+When deletion cannot complete:
+- Halt deletion process to prevent partial cleanup
+- Display specific error message indicating failure cause
+- Maintain project in original state
+- Provide manual recovery options for stuck deletions
+- Log failure details for administrative intervention

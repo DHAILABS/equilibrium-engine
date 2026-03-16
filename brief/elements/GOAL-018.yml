@@ -9,7 +9,8 @@ speakerOrAuthor: Zac
 capturedAt: '2026-03-16T00:00:00Z'
 canonicalArtifact: brief
 derivedFrom: []
-tracesTo: []
+tracesTo:
+  - CAP-016
 blockedBy: []
 supersedes: []
 epic: Spec Derivation

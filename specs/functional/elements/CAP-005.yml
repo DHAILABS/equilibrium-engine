@@ -1,0 +1,58 @@
+id: CAP-005
+type: capability
+title: Guided Interview Session Management
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-006
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User initiates a guided interview session for a specific project.
+
+## Action
+
+The system shall:
+1. Load existing project context and previously captured elements
+2. Generate targeted Socratic questions based on current brief gaps and inconsistencies
+3. Present questions sequentially while maintaining conversation flow
+4. Capture user responses and extract structured elements in real-time
+5. Maintain session state tracking settled items, flagged issues, and missing information
+6. Provide checkpoint functionality at natural conversation pauses
+7. Continue sessions across multiple turns while preserving context
+8. Generate draft elements from interview responses with provenance
+
+## Outcome
+
+A structured brief emerges with:
+- Elements extracted from conversational responses
+- Session continuity preserved across multiple interview turns
+- Targeted questioning based on current project gaps
+- Natural checkpointing at conversation breaks
+- Complete audit trail of interview progression
+
+## Scope
+
+Applies to interactive interview sessions for individual projects. Includes session state persistence and resumption. Excludes automated questioning without human interaction.
+
+## Edge Cases
+
+1. **Session timeout**: System shall save current state and provide session resumption with context summary
+2. **Contradictory responses**: System shall flag conflicts and seek clarification within the session
+
+## Failure Behaviour
+
+When interview session fails:
+- Preserve all captured responses and extracted elements
+- Save session state for recovery and continuation
+- Provide manual element creation for lost session data
+- Display specific error cause and recovery options
+- Log session context for debugging interview flow issues

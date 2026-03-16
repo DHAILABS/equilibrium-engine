@@ -1,0 +1,58 @@
+id: CAP-007
+type: capability
+title: Element Review and Approval Workflow
+status: draft
+confidence: medium
+sourceType: derived
+sourceRef: spec-derivation
+speakerOrAuthor: System
+capturedAt: '2026-03-16T20:20:45.697Z'
+canonicalArtifact: functional_spec
+derivedFrom:
+  - GOAL-008
+tracesTo: []
+blockedBy: []
+supersedes: []
+---
+## Trigger
+
+User accesses element review interface or selects specific elements for review.
+
+## Action
+
+The system shall:
+1. Present elements in draft status with full content and metadata
+2. Provide approve, reject, and edit actions for individual elements
+3. Support bulk operations for multiple element selection
+4. Transition element status from 'draft' to 'agreed' on approval
+5. Move rejected elements to 'rejected' status with optional rejection reason
+6. Update element timestamps and approval metadata
+7. Trigger downstream processes for approved elements (derivation eligibility)
+8. Maintain audit trail of all review decisions
+
+## Outcome
+
+Elements progress through workflow with:
+- Clear status transitions (draft → agreed/rejected)
+- Bulk processing capability for efficiency
+- Complete audit trail of review decisions
+- Approved elements eligible for spec derivation
+- Rejected elements excluded from further processing
+
+## Scope
+
+Applies to all draft elements requiring consultant approval. Includes individual and bulk review operations. Excludes automatic approval or external approval workflows.
+
+## Edge Cases
+
+1. **Conflicting bulk operations**: System shall process operations in order and report conflicts for user resolution
+2. **Elements with active edits**: System shall warn of concurrent editing and provide merge options
+
+## Failure Behaviour
+
+When review operations fail:
+- Preserve original element status to prevent inconsistent states
+- Report specific failure cause (validation errors, concurrent modification)
+- Provide retry option for failed operations
+- Log detailed error context for workflow debugging
+- Maintain transaction integrity across bulk operations

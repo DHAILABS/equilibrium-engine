@@ -1,0 +1,19 @@
+id: GOAL-052
+type: goal
+title: 'Run semantic gap detection from web UI'
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: audit-2026-03-17
+speakerOrAuthor: Zac
+capturedAt: '2026-03-17T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Gap Detection
+---
+As a consultant, I want to trigger a gap scan from the web UI that does LLM-powered semantic comparison between brief and spec elements — detecting not just missing coverage but conflicting claims, ambiguous intent, and unjustified spec elements — so that the gap registry reflects real mismatches, not just structural absence.
+
+Currently gap detection only checks tracesTo.length === 0. This goal requires a proper gap engine with semantic comparison.

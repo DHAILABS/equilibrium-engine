@@ -1,0 +1,20 @@
+id: GOAL-048
+type: goal
+title: 'Sign off on brief or spec snapshot'
+status: agreed
+confidence: high
+sourceType: consultant_entry
+sourceRef: audit-2026-03-17
+speakerOrAuthor: Zac
+capturedAt: '2026-03-17T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes:
+  - GOAL-014
+epic: Brief Quality
+---
+As a consultant, I want to freeze a versioned snapshot of the brief or spec that records exactly which elements were included, their SHA-256 content hashes, dismissed critiques, parked items, signer identity, and timestamp, so that sign-off is enforceable and scope changes require an explicit amendment cycle.
+
+Snapshots are immutable once signed. The snapshot page shows existing snapshots with integrity verification and element ID lists.

@@ -1,0 +1,19 @@
+id: GOAL-053
+type: goal
+title: 'Filter and manage gap registry in web UI'
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: audit-2026-03-17
+speakerOrAuthor: Zac
+capturedAt: '2026-03-17T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Gap Detection
+---
+As a consultant, I want to filter the gap registry by adjacent pair, mismatch class, severity, status, and direction, and reclassify or close gaps with evidence from within the web UI, so that the gap registry is a working tool rather than a read-only list.
+
+Currently the gaps page just shows a severity-sorted list with no filters or actions.

@@ -1,0 +1,17 @@
+id: GOAL-047
+type: goal
+title: 'View project spine visualization'
+status: agreed
+confidence: high
+sourceType: consultant_entry
+sourceRef: audit-2026-03-17
+speakerOrAuthor: Zac
+capturedAt: '2026-03-17T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Project Management
+---
+As a consultant, I want to see a visual representation of the four spine nodes (Brief, Spec, Architecture, Inventory) with element counts and gap counts between adjacent pairs, so that I can assess project health at a glance from the project dashboard.

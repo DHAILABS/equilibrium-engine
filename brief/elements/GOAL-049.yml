@@ -1,0 +1,17 @@
+id: GOAL-049
+type: goal
+title: 'Navigate between project pages'
+status: agreed
+confidence: high
+sourceType: consultant_entry
+sourceRef: audit-2026-03-17
+speakerOrAuthor: Zac
+capturedAt: '2026-03-17T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Project Management
+---
+As a consultant, I want breadcrumb navigation and quick-nav links between project pages (Brief, Spec, Gaps, Snapshots, Derive) so that I can move efficiently between different views of the same project.

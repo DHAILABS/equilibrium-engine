@@ -1,0 +1,19 @@
+id: GOAL-055
+type: goal
+title: 'Validate elements from web UI'
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: audit-2026-03-17
+speakerOrAuthor: Zac
+capturedAt: '2026-03-17T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Element Model
+---
+As a consultant, I want to trigger schema validation of all element YAML files from the web UI and see results (missing fields, invalid enums, broken references) as a health report, so that data quality issues are visible without running CLI scripts.
+
+Currently exists as scripts/validate_elements.py — needs web UI integration.

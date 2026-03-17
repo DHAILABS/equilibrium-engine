@@ -1,7 +1,7 @@
 id: GOAL-014
 type: goal
 title: Sign off on brief snapshot
-status: draft
+status: superseded
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

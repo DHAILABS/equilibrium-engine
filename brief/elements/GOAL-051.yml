@@ -1,0 +1,19 @@
+id: GOAL-051
+type: goal
+title: 'View readiness assessment in web UI'
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: audit-2026-03-17
+speakerOrAuthor: Zac
+capturedAt: '2026-03-17T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Quality
+---
+As a consultant, I want to see the brief readiness assessment (goal clarity, actor clarity, constraint clarity, conflict resolution, vocabulary quality, acceptance clarity, confidence coverage) as a dashboard widget or page, so that I know whether the brief is mature enough for spec derivation.
+
+Currently exists as scripts/readiness_gate.py — needs web UI integration.

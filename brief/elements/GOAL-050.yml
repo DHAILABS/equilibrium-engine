@@ -1,0 +1,19 @@
+id: GOAL-050
+type: goal
+title: 'Run critique engine from web UI'
+status: draft
+confidence: high
+sourceType: consultant_entry
+sourceRef: audit-2026-03-17
+speakerOrAuthor: Zac
+capturedAt: '2026-03-17T00:00:00Z'
+canonicalArtifact: brief
+derivedFrom: []
+tracesTo: []
+blockedBy: []
+supersedes: []
+epic: Brief Quality
+---
+As a consultant, I want to trigger the brief critique engine from the web UI and see results (conflicts, gaps, weak stories, unexamined assertions) inline with the brief elements, so that I do not have to run CLI scripts to assess brief quality.
+
+Currently exists as scripts/critique.py — needs web UI integration.

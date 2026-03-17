@@ -1,7 +1,7 @@
 id: GOAL-053
 type: goal
 title: 'Filter and manage gap registry in web UI'
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: audit-2026-03-17

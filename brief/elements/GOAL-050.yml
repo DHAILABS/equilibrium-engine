@@ -1,7 +1,7 @@
 id: GOAL-050
 type: goal
 title: 'Run critique engine from web UI'
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: audit-2026-03-17

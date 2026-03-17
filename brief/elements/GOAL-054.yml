@@ -1,7 +1,7 @@
 id: GOAL-054
 type: goal
 title: 'Import inventory from web UI'
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: audit-2026-03-17

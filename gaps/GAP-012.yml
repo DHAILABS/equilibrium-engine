@@ -1,0 +1,15 @@
+id: GAP-012
+adjacentPair: brief_spec
+direction: downstream_ahead
+mismatchClass: unjustified
+resolutionMode: document
+severity: minor
+upstreamRef: []
+downstreamRef:
+  - CAP-020
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+CAP-020 Repository Inventory Import exists but no brief element requests automatic repository scanning or inventory generation.

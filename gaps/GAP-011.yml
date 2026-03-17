@@ -1,0 +1,15 @@
+id: GAP-011
+adjacentPair: brief_spec
+direction: downstream_ahead
+mismatchClass: unjustified
+resolutionMode: document
+severity: minor
+upstreamRef: []
+downstreamRef:
+  - CAP-019
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+CAP-019 Gap Registry Views and Filtering exists but no brief element requests gap filtering or registry management functionality.

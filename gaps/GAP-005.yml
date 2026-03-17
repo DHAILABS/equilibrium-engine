@@ -1,0 +1,15 @@
+id: GAP-005
+adjacentPair: brief_spec
+direction: upstream_ahead
+mismatchClass: missing
+resolutionMode: implement
+severity: significant
+upstreamRef:
+  - GOAL-048
+downstreamRef: []
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+GOAL-048 requests brief/spec snapshot sign-off with SHA-256 hashes and immutable versioning but no capability covers snapshot management or digital signing.

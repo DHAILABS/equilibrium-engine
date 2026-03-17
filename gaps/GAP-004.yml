@@ -1,0 +1,15 @@
+id: GAP-004
+adjacentPair: brief_spec
+direction: upstream_ahead
+mismatchClass: missing
+resolutionMode: implement
+severity: minor
+upstreamRef:
+  - GOAL-047
+downstreamRef: []
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+GOAL-047 requests spine visualization with element counts and gap counts between adjacent pairs but no capability addresses this visualization feature.

@@ -1,0 +1,15 @@
+id: GAP-007
+adjacentPair: brief_spec
+direction: downstream_ahead
+mismatchClass: unjustified
+resolutionMode: document
+severity: minor
+upstreamRef: []
+downstreamRef:
+  - CAP-011
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+CAP-011 Brief Critique capability exists but no corresponding GOAL element requests this functionality in the brief.

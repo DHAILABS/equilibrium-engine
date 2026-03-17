@@ -1,0 +1,15 @@
+id: GAP-013
+adjacentPair: brief_spec
+direction: downstream_ahead
+mismatchClass: unjustified
+resolutionMode: document
+severity: minor
+upstreamRef: []
+downstreamRef:
+  - CAP-021
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+CAP-021 Element Schema Validation exists but no brief element specifically requests YAML schema validation functionality.

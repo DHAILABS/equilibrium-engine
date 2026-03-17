@@ -1,0 +1,15 @@
+id: GAP-002
+adjacentPair: brief_spec
+direction: upstream_ahead
+mismatchClass: missing
+resolutionMode: implement
+severity: significant
+upstreamRef:
+  - GOAL-034
+downstreamRef: []
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+GOAL-034 requests MCP context service but no capability exists in functional spec. INTG-001 defines the integration contract but no implementation capability is specified.

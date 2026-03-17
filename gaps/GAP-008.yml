@@ -1,0 +1,15 @@
+id: GAP-008
+adjacentPair: brief_spec
+direction: downstream_ahead
+mismatchClass: unjustified
+resolutionMode: document
+severity: minor
+upstreamRef: []
+downstreamRef:
+  - CAP-012
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+CAP-012 Brief Readiness Assessment exists but no brief element justifies this specific readiness evaluation capability.

@@ -1,0 +1,15 @@
+id: GAP-003
+adjacentPair: brief_spec
+direction: upstream_ahead
+mismatchClass: missing
+resolutionMode: implement
+severity: significant
+upstreamRef:
+  - GOAL-046
+downstreamRef: []
+status: open
+closedBy: []
+evidence: []
+createdAt: '2026-03-17T19:26:58.824Z'
+---
+GOAL-046 wants real-time spec derivation progress streaming via server-sent events but no capability covers this streaming functionality.

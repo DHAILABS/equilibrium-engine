@@ -1,7 +1,7 @@
 id: GOAL-012
 type: goal
 title: Run critique on brief elements
-status: agreed
+status: draft
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

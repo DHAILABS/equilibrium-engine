@@ -1,7 +1,7 @@
 id: GOAL-020
 type: goal
 title: Detect Brief-to-Spec mismatches (Gap₁)
-status: agreed
+status: draft
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

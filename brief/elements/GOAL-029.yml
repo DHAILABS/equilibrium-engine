@@ -1,7 +1,7 @@
 id: GOAL-029
 type: goal
 title: Create tickets from gap items
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

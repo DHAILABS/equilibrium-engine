@@ -11,7 +11,8 @@ canonicalArtifact: brief
 derivedFrom: []
 tracesTo: []
 blockedBy: []
-supersedes: []
+supersedes:
+  - GOAL-012
 epic: Brief Quality
 ---
 As a consultant, I want to trigger the brief critique engine from the web UI and see results (conflicts, gaps, weak stories, unexamined assertions) inline with the brief elements, so that I do not have to run CLI scripts to assess brief quality.

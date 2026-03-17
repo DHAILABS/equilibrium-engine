@@ -1,7 +1,7 @@
 id: GOAL-025
 type: goal
 title: View gap registry with filters
-status: draft
+status: superseded
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

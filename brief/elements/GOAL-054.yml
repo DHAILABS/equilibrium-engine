@@ -11,7 +11,8 @@ canonicalArtifact: brief
 derivedFrom: []
 tracesTo: []
 blockedBy: []
-supersedes: []
+supersedes:
+  - GOAL-027
 epic: Architecture & Inventory
 ---
 As a consultant, I want to trigger repository inventory import from the web UI — scanning repo structure, package manifests, lockfiles, and config files — so that Architecture-to-Inventory gap detection has current data without running CLI scripts.

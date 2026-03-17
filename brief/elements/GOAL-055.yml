@@ -11,7 +11,8 @@ canonicalArtifact: brief
 derivedFrom: []
 tracesTo: []
 blockedBy: []
-supersedes: []
+supersedes:
+  - GOAL-042
 epic: Element Model
 ---
 As a consultant, I want to trigger schema validation of all element YAML files from the web UI and see results (missing fields, invalid enums, broken references) as a health report, so that data quality issues are visible without running CLI scripts.

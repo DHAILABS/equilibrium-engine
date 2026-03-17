@@ -11,7 +11,8 @@ canonicalArtifact: brief
 derivedFrom: []
 tracesTo: []
 blockedBy: []
-supersedes: []
+supersedes:
+  - GOAL-025
 epic: Gap Detection
 ---
 As a consultant, I want to filter the gap registry by adjacent pair, mismatch class, severity, status, and direction, and reclassify or close gaps with evidence from within the web UI, so that the gap registry is a working tool rather than a read-only list.

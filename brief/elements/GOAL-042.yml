@@ -1,7 +1,7 @@
 id: GOAL-042
 type: goal
 title: Validate elements against schema
-status: draft
+status: superseded
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

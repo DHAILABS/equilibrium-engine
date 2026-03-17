@@ -11,7 +11,8 @@ canonicalArtifact: brief
 derivedFrom: []
 tracesTo: []
 blockedBy: []
-supersedes: []
+supersedes:
+  - GOAL-013
 epic: Brief Quality
 ---
 As a consultant, I want to see the brief readiness assessment (goal clarity, actor clarity, constraint clarity, conflict resolution, vocabulary quality, acceptance clarity, confidence coverage) as a dashboard widget or page, so that I know whether the brief is mature enough for spec derivation.

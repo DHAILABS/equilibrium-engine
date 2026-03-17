@@ -11,7 +11,8 @@ canonicalArtifact: brief
 derivedFrom: []
 tracesTo: []
 blockedBy: []
-supersedes: []
+supersedes:
+  - GOAL-020
 epic: Gap Detection
 ---
 As a consultant, I want to trigger a gap scan from the web UI that does LLM-powered semantic comparison between brief and spec elements — detecting not just missing coverage but conflicting claims, ambiguous intent, and unjustified spec elements — so that the gap registry reflects real mismatches, not just structural absence.

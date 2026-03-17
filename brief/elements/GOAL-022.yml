@@ -1,7 +1,7 @@
 id: GOAL-022
 type: goal
 title: "Detect Architecture-to-Inventory mismatches (Gap\u2083)"
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

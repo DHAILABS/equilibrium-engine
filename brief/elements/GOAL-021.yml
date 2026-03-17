@@ -1,7 +1,7 @@
 id: GOAL-021
 type: goal
 title: "Detect Spec-to-Architecture mismatches (Gap\u2082)"
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md

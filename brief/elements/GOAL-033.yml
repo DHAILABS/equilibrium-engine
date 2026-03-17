@@ -1,7 +1,7 @@
 id: GOAL-033
 type: goal
 title: Track convergence toward equilibrium
-status: draft
+status: agreed
 confidence: high
 sourceType: consultant_entry
 sourceRef: docs/roadmap.md
